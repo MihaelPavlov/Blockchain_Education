@@ -24,13 +24,9 @@ Notes for everything connect to blockchain
 </ol>
 </details>
 
-<details>
 <summary><a href="#what-have-smart-contracts-done-so-far">What have smart contracts done so far</a></summary>
-</details>
 
-<details>
 <summary><a href="#gas-1-introduction-to-gas">Gas 1: Introduction to Gas</a></summary>
-</details>
 
 <details>
 <summary><a href="#how-blockchains-work">How blockchains work?</a></summary>
@@ -46,8 +42,25 @@ Notes for everything connect to blockchain
 <summary><a href="#signing-transactions">Signing Transactions</a></summary>
 <ol>
 <li><a href="#private-key">Private Key</a></li>
-<li><a href="#public-key">Public Kye</a></li>
+<li><a href="#public-key">Public Key</a></li>
 <li><a href="#ecdsa">ECDSA</a></li>
+</ol>
+</details>
+
+<details>
+<summary><a href="#gas-2-block-rewards-and-eip-1559">Gas 2: Block Rewards and EIP 1559</a></summary>
+<ol>
+<li><a href="#what-is-a-block-reward">What is a block reward?</a></li>
+<li><a href="#what-is-eip">What is EIP?</a></li>
+<li><a href="#current-eth-fee-model">Current ETH fee model</a></li>
+<li><a href="#eip-1559-goals">EIP 1559 Goals</a></li>
+<li><a href="#what-is-eip-1559">What is EIP 1559?</a></li>
+<li><a href="#current-fee-model">Current fee model</a></li>
+<li><a href="#eip-1559-model">EIP 1559 model</a></li>
+<li><a href="#miners">Miners</a></li>
+<li><a href="#wallets">Wallets</a></li>
+<li><a href="#gas-fees">Gas fees</a></li>
+
 </ol>
 </details>
 
@@ -207,3 +220,55 @@ The public key is something that everybody can see.
 #### ECDSA
 ECDSA(Elliptic Curve Digital Signature Algorithm)
 <br/>For ethereum and bitcoin the algorithm for converting the private key to signature is ECDSA
+
+# Gas 2: Block Rewards and EIP 1559
+
+#### What is a block reward?
+ 
+> Bitcoin block rewards are new bitcoins awarded to cryptocurrency miners for being the first to solve a complex math problem and creating a new block of verified bitcoin transactions. 
+<br/>The miners use networks of computers to do this, and every time a new block is created it is verified by all the other competing miners. Then a new math problem is introduced and the miners start over.
+
+#### What is EIP?
+
+> EIP stands for **Ethereum Improvement Proposal**.
+<br/>And is a common way of requesting changes to the ethereum network inspired by bitcoin improvement proposals(BIPS)
+<br/>EIP is a design document covering technical specifications of the proposed change 
+
+
+#### Current ETH fee model
+
+> The current fee model is based on a simple auction mechanism also known as a first price autcion.
+<br/> The users who want to have their transaction picked up by a miner have to essentially bid for their space in a block. This is done by submitting a gas price. That they are willing to pay for a particular transaction. The miners are incentivized to pick up transaction by sorting them by  the highest gas prize and including the most profitable ones first.
+<br/> This can be quite inefficient and usually reasults in users overpaying for their transactions.
+<br/> **This model is also quite problematic when it comes to the wallets.**
+<br/> Metamask for example allows the suers to adjust their fee, by choosing between, slow ,averageand fast confirmation time or by specifying a gas price manually.
+<br/>Less sophisticated user were unlucky enough to submit their transaction with a default fee. Just before a spike in a gas fees may end up waiting for the transaction to be confirmed for a long period of time.
+
+#### EIP 1559 Goals
+> - Making transaction fees more predictable
+> - Reducing delays in transaction confirmation
+> - Improving user expreience by automating the fee bidding system
+> - Creating a positive feedback loop between network activity and the eat supply
+#### What is EIP 1559?
+
+> EIP 1559 introduce new concept of a base fee. The base fee represents the minimum fee that has to be paid by a transaction to be included in a block.
+<br/> The base fee is set per block and it can be adjusted up or down depending on how congested the ethereum network is.
+<br/> The next big part EIP 1559 is an increase in the network capacity achieved by changing the max gas limit per block from 12.5 milion to 25 million gas, _basically doubling the block size_.
+
+> With the base fee and increased network capacity EIP 1559 can build the following logic.
+<br/> When the network is at more than 50 percent utilization the base fee is incremented. 
+<br/> When the network is at lower than 50 percent utilization the base fee is decremented.
+<br/> This basically means that the network aims at achieving equilibrium at 50 capacity by adjusting fees accordingly to the network utilization.
+
+> EIP 1559 also introduce a miner tip, a separete fee that can be paid directly to the miner, to incentivize them to prioritize a transaction.
+<br/> This is very similar to the current mechanism, where the miners can be incentivized by higher gas fees. This feature is really important for transactions taht take advantage of quick confirmation such as arbitrage transactions.
+
+#### Current fee model
+
+#### EIP 1559 model
+ 
+#### Miners
+
+#### Wallets
+
+#### Gas fees
