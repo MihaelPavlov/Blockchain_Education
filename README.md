@@ -265,10 +265,59 @@ ECDSA(Elliptic Curve Digital Signature Algorithm)
 
 #### Current fee model
 
+> Imagin the minimum gas fee to be included in the previous block was 50 GWEI the network activity seems to remain the same so users start submitting thei transactions with 50 GWEI to be included in the next block.
+<br/>At the same time a new higly anticipated token is launched causing users who want to buy it to dramatically increase their bids.
+<br/> Now to be included in the next block the minimum required fee is 100 GWEI if the network activity remains high for multiple subsequent blocks the users who already submitted their transaction with 50 GWEI may wait for their confirmations for a very long period of time. 
+<br/> In this case the block size is capped at 12.5 million gas and the only way to get into a block is to bid higher than the other users.
+
 #### EIP 1559 model
- 
+
+> The same example from Current fee model. 
+<br/> The 50 GWEI was the base fee and the network utilization was at 50 percent with most blocks using 12.5 million gas half of the gas limit.
+<br/> The spike caused by the release of the new token results in users submitting their transations with a higher minor tip, seeing the high demand for the block space and a lot of transactions with high minor tips.
+<br/> The miners produce a block that is at the max cap limit of of 25 million gas 
+<br/> This results in more transactions included in a block but it also causes the base fee increased in the following blok as the current block is 100% full. If the network activity and the block space remain high
+the miners would keep producing full blocks increasing the base fee with each subsequent block.
+<br/> At some point the fee would become high enough to drive off some of the users causing the network to start coming back to below 50 network utilization and lowering the fees in the subsequent blocks.
+<br/> The base fee can increase or decrease by a maximum of 12.5% per block so it would take roughly **20 blocks around 5 mins for gas prices to 10x** and 40 blocks to 100x.
+
+> In our example the second block would have a base fee of 56.25 GWEI
+<br/> This example demonstrates how spikes in network fees can be smoothed out when EIP 1559 is implemented, another way of thinking about this model is to imagine that it basically swaps high volatility in the fee prices for volatility in the block size, because the increments and decrements are constrained the difference in the base fee from block block to block can be easily calculated.
+<br/> This allows wallets to automatically set the base fee based on the information from the previous block
+ <br/> To avoid the situation where miners can collude and artificially inflate the base fee for their own enefit the entire base fee is burned let's repeat this **the base fee is always entirely burned, the minor tip is always entirely received by the miner.**
+ <br/> There is also one more important new concept known as a **fee cap**. 
+ <br/> This can be said by users who would like to limit how much they want to pay for a particular transaction instead of just paying the current base fee.
+ <br/> Transaction with a fee cap that is lower than the current base fee, would have to wait until the base fee is lower than the max fee set in feecap to be included in a block.
+ <br/> The fee changes are also backward compatible. The legacy ethereum transactions will still work under the new fee system although they would not benefit directly from the new pricing model.
+
 #### Miners
+
+ > Changes proposed in EIP 1559 have a lot of implications some of them quite severe.
+ <br/> Less profit for the miners. The miners in the current fee system receive both the block subsidy reward adn the entire gas fee.
+ <br/> With the recent high gas prices caused by DeFi miners were abble to collect more money from the fees. Than the actual block rewards even though historically block rewards were always much bigger than the extra fees collected from transactions.
+ <br/> After the changes in EIP 1559 are implemented the miners would only receive the block reward plus the miner tip.
+ <br/> This is also why most miners are quite reluctant when it comes to implementing the proposal suggesting to push the change to ETH 2.0.
 
 #### Wallets
 
+>With EIP 1559 wallet don't have to estimate the gas fee anymore. They can jsut set the base fee automatically based of the information available in the previous block
+<br/> This should simplify wallet's user interfaces.
+<br/> The base fee burning also has major implications when it comes to the eth supply
+<br/> This is also why EIP 1559 is very often deiscussed by eth investors.
+<br/> Burning the base fee creates an interesting feedback loop between the netwrok usage and the eth supply.
+<br/> More network activity equals more eth burned equal less eth avaiable to be sold on the market by miners.
+<br/> Making the already existing eth more valuable.
+<br/> Burning the base fee basically rewards the users of the network by making their ether more scarce instead of overpaying miners
+<br/> The fee burning mechanism also sparked a few discussions about it becoming deflationary 
+<br/> This would be possible if the block reward plus minor tip is lower than the base fee burned. That would be the case for example during the recent DeFi gas feed craze where the network was constanly under heavy utilization. 
+<br/> One potential drawback when it comes to burning the base fee is the fact of losing control over the long-term monetary policy of eth. With this change it would end up beign sometimes inflationary and sometimes deflationary. This doesn't look like a major problem as the max inflation would be capped at around 0.5 - 2 percent per year.
+
+
 #### Gas fees
+
+> Will EIP 1559 make gas fee lower? 
+<br/> Not really 
+<br/> It will clearly optimize the fee model by smoothing these spikes and limiting the numer of overpaid transactions, but the main ways of lowering gas fees are still eth 2.0 and layer 2 scaling solutions.
+<br/> It looks like EIP1559 would be a great change to the ethereum fee system
+<br/> This also seems to be the consensus within the ethereum community. With the mojority of people rooting for the change to be implemented, there are still few challenges to overcome. Especially when it comes to making sure that miner can safely process bigger blocks without making the whole network more prone to denial of service attack.
+All the clients should update at the same time
