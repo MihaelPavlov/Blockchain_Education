@@ -24,7 +24,32 @@ Notes for everything connect to blockchain
 </ol>
 </details>
 
+<details>
+<summary><a href="#what-have-smart-contracts-done-so-far">What have smart contracts done so far</a></summary>
+</details>
 
+<details>
+<summary><a href="#gas-1-introduction-to-gas">Gas 1: Introduction to Gas</a></summary>
+</details>
+
+<details>
+<summary><a href="#how-blockchains-work">How blockchains work?</a></summary>
+<ol>
+<li><a href="#hash">Hash</a></li>
+<li><a href="#block">Block</a></li>
+<li><a href="#blockchain">Blockchain</a></li>
+<li><a href="#distributed">Distributed</a></li>
+</ol>
+</details>
+
+<details>
+<summary><a href="#signing-transactions">Signing Transactions</a></summary>
+<ol>
+<li><a href="#private-key">Private Key</a></li>
+<li><a href="#public-key">Public Kye</a></li>
+<li><a href="#ecdsa">ECDSA</a></li>
+</ol>
+</details>
 
 # The purpose of Smart Contracts
 
@@ -96,25 +121,25 @@ And because smart contracts are stored on a blockchain, everything is completely
 
 Decentralized, Transparency & Flexibility, Speed & Efficiency, Security & Immutability, Counterparty Risk Removal, Trust Minimized Agreements
 
-## Decentralized
+### Decentralized
 
 > Means that the contracts don’t have centralized intermediary , the different individuals that run one of thse blockchains are know as node operators. And it’s combination of all these 1000s.
 <br/> Of node operators running the same software, running these algorithms, running these smart contracts that make the network  decentralized. 
 
-## Transparency and Flexibility
+### Transparency and Flexibility
 
 > Since all these individual node operators run the software, everybody can see everything that’s happening on chain. **Anything that’s going to be unfair, people will be able to see it and just not use.**
 <br/>Everybody has perfect information and has to play by the the same rules.
 <br/>That doesn’t mean that thre’s no privacy, the blockchain is pseudo anonymous meaning that you aren’t necessarily tied to an identity in real life.
 
-## Speed and Efficiency
+### Speed and Efficiency
 
 > Let say we want to transfer money from one bank to another bank which is in other Country. The bank just make basic math. 
 <br/>Substract my money and added to the other account. But this can take weeks or mounths? 
 <br/>Blockchain fix the problem, all these transaction happen instantly
 
 
-## Security and Immutability
+### Security and Immutability
 
 >One smart contract is deployed, that’s it, whatever is in the code is going to be in he code forever, they cannot be altered with in any way. That means the sucurity is much easier.
 <br/>Whereas in a centralized world, somebody can hack into the server, jump into the database and  change some numbers, you can’t do that in the blockchain world.
@@ -123,13 +148,51 @@ Decentralized, Transparency & Flexibility, Speed & Efficiency, Security & Immuta
 <br/>Hacking a blockchain is nerly impossible, and leaps and bound more difficult than hacking a centralized server. 
 <br/>Not only that, but this is safer in the asset sense as well. All you need to access your credentials and your information in your assets is your private key. Which is basically your password for all of this.
 
-## Counterparty Risk Removal
+### Counterparty Risk Removal
 
 > We remove this centralized intermediary, remove these trust gateways that we have to do in web two.
 
-## Trust minimized agreements
+### Trust minimized agreements
 
 > The smart contract. We move away from brand based agreements to math base agreements
 
 
 # What have Smart Contracts done so far?
+
+- [DeFi](https://www.investopedia.com/decentralized-finance-defi-5113835#:~:text=Decentralized%20finance%20(DeFi)%20is%20an%20emerging%20financial%20technology%20that%20challenges,peer%2C%20or%20P2P%2C%20transactions.) - Decentralized Finance
+- [DOAs](https://ethereum.org/en/dao/) - Decentralized Autonomous Organizations
+- [NFTs](https://www.investopedia.com/non-fungible-tokens-nft-5115211) - Not fungible tokens
+
+# Gas 1: Introduction to Gas
+> So before that we undestand that the blockchain is run by all the different nodes.Well all those different nodes are running this blockchain because they actually get paid for all the transactions that happen on these blockchains. 
+<br/> Whenever you make a transaction there’s a node or a miner or a validator somebody running the blockchain software is gonna get paid a tiny bit of Etherium or Polygon or whatever blockchain that you’re running on, they’re gonna get paid a tiny bit of that native blockchain currency.
+<br/>This payments is obviously to incentivize people to continue to run nodes and they calculate how much you pay and how much the node operators get paid based of how much gas you use.
+
+**So there’s this concept of gas:
+	_Gas: A unit of computational measurement.
+	The more complex your transaction is the more gas you have to pay._**
+
+For every transaction there is a gas limit & usage by the transaction
+
+![image](https://user-images.githubusercontent.com/57910640/201519522-72f000f7-2ed6-4521-aff6-a4a3724c7b34.png)
+
+Soo basically this transaction used 21 thousand units of gas.
+
+In [metamask](https://metamask.io/) we can use different type of gas fees that you can actually pay. 
+The reason that gas fees might change, depending on how busy the blockchain is, you have to pay more gas. 
+
+![image](https://user-images.githubusercontent.com/57910640/201519549-75d05ed9-cc05-4030-b58e-26a85e55da36.png) 
+
+If a lot of people are sending transactions, that means there’s not going to be eneough space for everyone’s transaction to get through
+
+# How do Blockchains work?
+
+#### Hash
+
+#### Block
+
+#### Blockchain
+
+#### Distributed
+
+# Signing Transactions
