@@ -196,3 +196,14 @@ If a lot of people are sending transactions, that means there’s not going to b
 #### Distributed
 
 # Signing Transactions
+
+#### Private Key
+Only know to the key holder, it’s used to sign transactions. 
+You need to keep this private key secret, because you kind of using this as your secret password for all your transactions
+
+#### Public Key
+The public key is something that everybody can see.
+
+#### ECDSA
+ECDSA(Elliptic Curve Digital Signature Algorithm)
+<br/>For ethereum and bitcoin the algorithm for converting the private key to signature is ECDSA
