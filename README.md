@@ -28,24 +28,24 @@ Notes for everything connect to blockchain
 
 # The purpose of Smart Contracts
 
-## **What is the value of smart contracts?** 
+### **What is the value of smart contracts?** 
 
 (Trust minimized agreements) Basically Agreements and Promises, but unbreakable promises !
 
-### _Live Example of Aggreements_ : 
+####  _Live Example of Aggreements_ : 
 > - The lights in your house are powered by electricity which is a agreement from you and the electic company. 
 You agree to pay them in return they’ll keep the lights on.
 > - The electricity that they generate is agreement between them and engineers who build turbines to generate the electricity.
 > - Almost everything you do and everything you interact with is the result of some form of agreement or contract in some aspect 
 Always when give money for example to the bank to keep them safe. We thing inside ourself. How can I trust this person/bank? Will  they break their promise?
 
-### _Live Example of Broken Promise_ :
+#### _Live Example of Broken Promise_ :
 
 > - The Great Depression with the run of the banks. Banks promised to keep our money safe and that when we went back to go get it they would actually have the money there. And there were times that they didn’t have the money they’re. 
 > - HiperInflation inside different countries
 > - History is a lesson of reliable subjects who are notorious promise breakers
 
-## **What is Smart Contracts**
+### **What is Smart Contracts**
 
 - Cannot be altered(immutable)
 - Automatically executes
@@ -56,7 +56,7 @@ Always when give money for example to the bank to keep them safe. We thing insid
 > - The smart contract are just like contract in real world . The only difference is that they are completely digital.
 <br/> _In fact a smart contract is actually a tiny computer program that is stored inside a blockchain._
 
-### _Live example of what smart contract could fix:_ 
+#### _Live example of what smart contract could fix:_ 
 > There is a site which name is Kickstarter(the large fundraising platform)
 Product teams can go to Kickstarter, create a project, set a funding goal and start collecting money from other who believe in the idea.
 <br />Kickstarter is eesentially a third party that sits between product teams and supporters(the pople who funding).
@@ -84,7 +84,7 @@ Both the product team and it’s supports have to trust Kickstarter.
 And because smart contracts are stored on a blockchain, everything is completely distributed. **With this technique, no one is in control of the money**
 
 
-## **WHY we should trust smart contracts?**
+### **WHY we should trust smart contracts?**
 
 > Because the smart contracts are stored on a blockchain, they inherit some interesting properties.
 <br/> - They are immutable - means that once a smart contract is created, it can never be changed again 
