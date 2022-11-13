@@ -3,9 +3,28 @@ Notes for everything connect to blockchain
 
 # Table of Contents
 
+<details>
+<summary><a href="#the-purpose-of-smart-contracts">The purpose of Smart Contracts</a></summary>
 <ol>
-<li><a href="#the-purpose-of-smart-contracts">The purpose of Smart Contracts</a></li>
+<li><a href="#what-is-the-value-of-smart-contracts">What is the value of smart contracts?</a></li>
+<li><a href="#what-is-smart-contracts">What is Smart Contracts?</a></li>
+<li><a href="#why-we-should-trust-smart-contracts">WHY we should trust smart contracts?</a></li>
 </ol>
+</details>
+
+<details>
+<summary><a href="#blockchain-benefits">Blockchain Benefits</a></summary>
+<ol>
+<li><a href="#decentralized">Decentralized</a></li>
+<li><a href="#transparency-and-flexibility">Transparency and Flexibility</a></li>
+<li><a href="#speed-and-efficiency">Speed and Efficiency</a></li>
+<li><a href="#security-and-immutability">Security and Immutability</a></li>
+<li><a href="#counterparty-risk-removal">Counterparty Risk Removal</a></li>
+<li><a href="#trust-minimized-agreements">Trust Minimized Agreements</a></li>
+</ol>
+</details>
+
+
 
 # The purpose of Smart Contracts
 
@@ -26,7 +45,7 @@ Always when give money for example to the bank to keep them safe. We thing insid
 > - HiperInflation inside different countries
 > - History is a lesson of reliable subjects who are notorious promise breakers
 
-## What is Smart Contracts 
+## **What is Smart Contracts**
 
 - Cannot be altered(immutable)
 - Automatically executes
@@ -65,9 +84,52 @@ Both the product team and it’s supports have to trust Kickstarter.
 And because smart contracts are stored on a blockchain, everything is completely distributed. **With this technique, no one is in control of the money**
 
 
-## The other question is WHY we should trust smart contracts?
+## **WHY we should trust smart contracts?**
 
 > Because the smart contracts are stored on a blockchain, they inherit some interesting properties.
 <br/> - They are immutable - means that once a smart contract is created, it can never be changed again 
 <br/> - They are distributed - means that  the output of your contract is validated by everyone on the network
 <br/>So a single person cannot force the contract to release the funds because other people on the network will spot this attempt and mark it as invalid.
+
+
+# Blockchain Benefits 
+
+Decentralized, Transparency & Flexibility, Speed & Efficiency, Security & Immutability, Counterparty Risk Removal, Trust Minimized Agreements
+
+## Decentralized
+
+> Means that the contracts don’t have centralized intermediary , the different individuals that run one of thse blockchains are know as node operators. And it’s combination of all these 1000s.
+<br/> Of node operators running the same software, running these algorithms, running these smart contracts that make the network  decentralized. 
+
+## Transparency and Flexibility
+
+> Since all these individual node operators run the software, everybody can see everything that’s happening on chain. **Anything that’s going to be unfair, people will be able to see it and just not use.**
+<br/>Everybody has perfect information and has to play by the the same rules.
+<br/>That doesn’t mean that thre’s no privacy, the blockchain is pseudo anonymous meaning that you aren’t necessarily tied to an identity in real life.
+
+## Speed and Efficiency
+
+> Let say we want to transfer money from one bank to another bank which is in other Country. The bank just make basic math. 
+<br/>Substract my money and added to the other account. But this can take weeks or mounths? 
+<br/>Blockchain fix the problem, all these transaction happen instantly
+
+
+## Security and Immutability
+
+>One smart contract is deployed, that’s it, whatever is in the code is going to be in he code forever, they cannot be altered with in any way. That means the sucurity is much easier.
+<br/>Whereas in a centralized world, somebody can hack into the server, jump into the database and  change some numbers, you can’t do that in the blockchain world.
+<br/>And since it’s decentralized, in order to hack the blockchain, you’d have to take over half of the nodes as opposed to in the centralized world, where you only have to take over one in the regular world. If your computer and your backup computer go down, all of your data is gone. 
+<br/>In the blockchain word, if your computer and your backup computer go down, all your data is safe, because it’s beign run on all these other decentralized nodes. And event if a few 100 nodes or a few 1000 nodes go down. It’s doesn’t matter because as long as one node has a copy of the blockchain, you’re good to go. 
+<br/>Hacking a blockchain is nerly impossible, and leaps and bound more difficult than hacking a centralized server. 
+<br/>Not only that, but this is safer in the asset sense as well. All you need to access your credentials and your information in your assets is your private key. Which is basically your password for all of this.
+
+## Counterparty Risk Removal
+
+> We remove this centralized intermediary, remove these trust gateways that we have to do in web two.
+
+## Trust minimized agreements
+
+> The smart contract. We move away from brand based agreements to math base agreements
+
+
+# What have Smart Contracts done so far?
