@@ -321,3 +321,65 @@ the miners would keep producing full blocks increasing the base fee with each su
 <br/> It looks like EIP1559 would be a great change to the ethereum fee system
 <br/> This also seems to be the consensus within the ethereum community. With the mojority of people rooting for the change to be implemented, there are still few challenges to overcome. Especially when it comes to making sure that miner can safely process bigger blocks without making the whole network more prone to denial of service attack.
 All the clients should update at the same time
+
+# High-Level Blockchain Fundamentals
+
+> Now traditionally, when you run an application, you will be website or something that connects to some server, you are interacting with a centralized entity. And unlike how we saw with the blockchain with multiple different peers.
+<br/>it's going to be run by a single centralized group. Now, it still could be run on many different servers, but all those servers are still going to be controlled by the same centralized group blockchains, as we saw run on a network of different independent nodes
+
+<br/> When we saw a peer, a peer, B Piercey. Those were different examples of different independent users running the blockchain technology on their own node. 
+
+>Now, when I use the term **node**, I'm usually referring to a single instance of a decentralized system. So when I say a single node, when I'm talking about a blockchain, I'm talking about one of those pure A's pure BS pure C's running that blockchain software, I'm talking about one server running this technology. And again, it's this network. It's this combination of these nodes interacting with each other, that creates this entire blockchain.
+
+<br/>What makes these so potent too, is that anybody can join the network. And that's why there's decentralized the barrier <br/>
+To entry is a little bit of hardware requirements for getting the correct materials to run the software. And then you running the software, anybody can join these networks and participate.
+<br/>And that's what makes it truly decentralized.
+<br/>Now in the traditional world, applications are run by centralized entities. And if that entity goes down, or is maliciously bribed, or decides that they want to shut off, they just can't, because they are the ones that control everything. 
+<br/> Blockchains, by contrast, don't have this problem. If one node or one entity that runs several nodes goes down, since there are so many other independent nodes running that it doesn't matter, the blockchain and the system will persist so long as there is at least one node always running. 
+<br/>And luckily for us, most of the most popular chains like Bitcoin and Aetherium, have 1000s and 1000s of nodes. 
+<br/>And as we showed in our demo, if one node acts maliciously, all the other nodes will ignore that node and kick that out or even punish it in some systems, because they can easily check everybody else's node and see, okay, this one is out of sync with the majority. And yes, majority rules when it comes to the blockchain. Each blockchain keeps a full list of every transaction and interaction that's happened on that blockchain and we saw if a node tries to act maliciously, then all their hashes are going to be way out of whack and they're not going to match everybody else.
+<br/> This gives blockchains this incredibly potent immutability trait where nothing can be changed or corrupted. So in essence, we can think of a blockchain as a decentralized database. And with Etherium, it has an extra additional feature where it also can do computation in a decentralized manner.
+
+#### Consensus
+
+> **Proof of work** and **Proof of stake** fall under this umbrella of consensus.
+<br/> And Consensus is a really important topic when it comes to blockchains. Consensus is defined ** as the mechanism used to reach an agreement on the state or a single value on the blockchain. Especially in decentralized system.
+<br/> The example with the mojority nodes is part of these consensus mechanism.
+<br/> Consensus protocal can be broken down into two pieces
+<br/> - Chain Selection algorithm,
+<br/> - A Civil Resistance mechanism
+<br/> That mining piece that we were doing, or where the proof of work algorith is what's known as a **civil resistance mechanism**.
+<br/>Now proof of work is known as a civil resistance mechanism, because it defines a way to figure out who is the block author. Which node is goind to be the node who did the work to find that mine and be the author of that block so all the other nodes can verify that it's accurate.
+<br>Civil resistance mechanism is a blockchain ability to defend agains yusers creating a large number of pseudo anonymous identities to gain advantageous influence is over set system
+
+#### PoW and PoS
+
+- PoW: Let's talk about proof of work a little bit more in depth first, in proof of work. This is civil resistant, because a single node has to go through a very computationally expensive process called mining, which we demonstrated earlier to figure out the answer to the blockchains Riddle of finding that correct nonce, or, or whatever the blockchain system has in place.  
+<br/> This works because no matter how many pseudo anonymous accounts you make, each one still has to undergo this very computationally expensive activity of finding the answer to the proof of work problem, or the proof of work riddle, which again, in our demonstration, it was finding a nonce with that first four zeros. But again, each blockchain might change the riddle work or change the problem to be a little bit different. In fact, some of these blockchains make this riddle intentionally hard or intentionally easy to change what's called the block time.
+<br/>The block time is how long it takes between blocks being published. And it's proportional to how hard these algorithms are. So these problems actually can change. Depending on how long they want the blockchain to
+be. If a system wants to block time to be very, very long, they just make the problem very, very hard. If they wanted to be very short, they make the problem a lot easier. We'll talk about civil attacks in a little bit and how they can affect the system.But with proof of work, it's a verifiable way to figure out who the block author is and be civil resistant. Now, you
+need to combine this with a chain selection rule create this consensus. Now, there's some consensus protocols that have more features, but very, very roughly, these are the two pieces that we're going to look at. The second piece is going to be a **chain selection rule.**
+
+> How do we know which blockchain is actually the real blockchain and the true blockchain now on?
+<br/> Bitcoin and Etherium, they both use a form of consensus called Nakamoto consensus. And this is a combination of proof of work and longest chain rule, the decentralized network side that whichever blockchain has the longest chain, or the most
+ number of blocks on it is going to be the chain that they use.
+ <br/> This makes a lot of sense, because every additional block that a chain is behind, it's going to take more and more computation for it to come up. That's why when we saw in our transaction, we actually saw confirmations. The number of confirmations is the number of additional blocks added on after our transaction went through in a block. So if we see confirmations as to it means that the block that our transaction was in has two blocks ahead of it in the longest chain. 
+ 
+ > Now, I do want to point out that a lot of people use proof of work as a consensus protocol. And I do want to say that this is a little bit inaccurate, but sometimes people use it interchangeably..
+ <br/>Proof of Work is a piece of the overall consensus protocol, which in Bitcoin and Etherium. One current case is Nakamoto consensus, Nakamoto consensus is a combination of proof of work, and this longest chain rule, both equally and very, very important.
+
+  Now, proof of work also tells us where these transaction fees and these block rewards go to remember how when we made this transaction, we had to talk about gas and a transaction fee. So who's getting paid who was getting this transaction, and this transaction fee is going to the miners or the validators in a proof of work network? They're called miners and in the proof of stake network, they're called validators.
+
+  > But all the nodes are trying as many as possible to try to get this answer first. Why? Because the first node to figure out the answer to the blockchain real is gonna get that transaction fee, they're gonna get paid from that. Now, when a node gets paid, they actually get paid in two different ways. One is going to be with a transaction fee. And another piece is going to be the block reward. Remember how we talked about alternating the gas price or the gray on our transaction? Well, that's the transaction fee that we're going to pay to these blockchain nodes for including our transaction, the block reward is given to these nodes from the protocol from the blockchain itself. You've probably heard of the Bitcoin halving before the halving is referring to this block reward getting cut in half and it's supposed to be cut in half, roughly every four years. This block reward increases the circulating amount of whatever cryptocurrency that is being rewarded. For example, on Etherium the block reward is giving out Etherium and a Bitcoin the block reward is giving out Bitcoin. So these nodes are competing against each other to be the first one to find this transaction to be the first one to find the answer to this problem, so that they can be the ones to win both this block reward and your transaction fee. Some block chains like Bitcoin, for example, have a set time when they're no longer going to give out block rewards and the miners or the nodes are only going to get paid from trends. Action fees. Now this gas fee, again is paid by whoever initialize the transaction. When we got our funds from the faucet, there was some server and somebody else was paying the transaction fee for us. However, when we sent ether from one account to another, our first account
+  actually paid some transaction fee to send that ether. In proof of steak. There's also a gas fee, but it's paid out to
+  validators instead of miners. And we'll talk about that in a little bit.
+
+  #### Type of attacks 1:50:20
+
+
+
+
+
+
+
+ 
