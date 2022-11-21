@@ -384,7 +384,7 @@ need to combine this with a chain selection rule create this consensus. Now, the
 <br/>Instead of solving this difficult problem, proof of stake nodes put up ome collateral that they/re going to behave honestly, aka, they stake in the  example of Etherium 2.0.
 Nodes put pu some Etherium as a stake that they're going to behave honestly in the network, if they misbehave to the network, they are going to be slashed or remove some of their stake.
 <br/> Obiviously this is a very good civil resistance mechanism. Because if you try to create a whole bunch of anonymous accounts, then each one of those accounts, you have to put up some stake. And if you misbehave, you're going to run the risk of losing all the money that you put up as collateral
-<br/> In this system, miners are actually called <strong>validators<strong> because they're no longer binding anything, they're actually just validating other nodes. Now, unlike proof of work, which every node is racing to be the first on to find the block, and proof of stake nodes are actualy randomly chosen to propose the new block and then the rest of the validators will validate if that node has proposed the block honestly.
+<br/> In this system, miners are actually called <strong>validators</strong> because they're no longer binding anything, they're actually just validating other nodes. Now, unlike proof of work, which every node is racing to be the first on to find the block, and proof of stake nodes are actualy randomly chosen to propose the new block and then the rest of the validators will validate if that node has proposed the block honestly.
 <br/> We saw with our cryptography lesson, it's usually very easy for other nodes to verify if a proposal or a transaction is honest.
 
   #### Type of attacks
