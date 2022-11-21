@@ -64,6 +64,13 @@ Notes for everything connect to blockchain
 </ol>
 </details>
 
+<details>
+<summary><a href="#high-level-blockchain-fundamentals">High-Level Blockchain Fundamentals</a></summary>
+<ol>
+<li><a href="#-">-</a></li>
+</ol>
+</details>
+
 # The purpose of Smart Contracts
 
 ### **What is the value of smart contracts?** 
