@@ -410,7 +410,41 @@ A 51% attack is an attack on a cryptocurrency blockchain by a group of miners wh
 
 #### PoS Randomness
 
-Randomness is a really important topic when we're talking about blockchains.
+>Randomness is a really important topic when we're talking about blockchains.
+<br/>
+
+#### Scalability
+
+>When we were talking about gas prices, we were saying that the gas prices can get really high if a lot of people want to send a transaction, because a block only has so much black space and the nodes can only add so many transactions. So when a lot of people want to use a blockchain the gas price skyrockets. This is not very scalable, because if we want to add more and more people to these blockchains it's going to cost more and more to use the blockchain.
+<br/> Because more people are going to want to get into these block. This means that there's kind of a ceiling to how many people can use the system because of the financial constraints that will get imposed as gas prices keep rising. Etherium.2.0 is not onty attacking the environmental impact of proof of work by switching to proof of stake, but they're also implementing this new methodology called sharding.
+
+#### Sharding
+
+> Sharding is a solution to the scalability problem, a sharded blockchain really just that it's going to be a blockchain of blockchains. 
+<br/> There's a main chain that's going to coordinate everything amongst several chains that hook into this main chain. 
+<br/> This means that there's more chains for people to make transactions on efectively increasing the amount of block space that there is
+<br/>Sharding can greatly increase the number of transactions on a blockchain layer 1.
+<br/>
+
+#### Layer 1: Base Layer blockchain implementation
+
+> A layer 1 refers to any base layer blockchain implementation.
+<br/> This is basic layer blockchain solution (Bitcoin,Etherium, Avalance)
+
+#### Layer 2: Any application built on top of a layer 1
+
+Arbitrage and optimism are very because they are layer twos also look to sovel this scalability issue. Arbitrage and optimism what's know as <strong>Rollups</strong>
+
+#### Rollups
+Rollup is kind of sharded chain. They derive their security from the base layer. And they bulk their transaction into the layer 1.
+<br/> This solve some of the scalalbility issues by being another blockchain that people can make transaction on.
+<br/> They're different from side chains. Because side chain derive their security from their own protocols, rollups derive their security from the base layer.
+
+
+
+
+
+
 
 
 
